@@ -31,3 +31,12 @@ To achieve this, the backend must have a list of "allowed origins".
 
 In this case, it would have to include http://localhost:8080 for the frontend to work correctly.
 """
+
+# Wildcards
+"""
+It's also possible to declare the list as "*" (a "wildcard") to say that all are allowed.
+
+But that will only allow certain types of communication, excluding everything that involves credentials: Cookie, Authorization headers like those used with Bearer Tokens, etc.
+
+So, for everything to work correctly, it's better to specify explicitly the allowed origins.
+"""
